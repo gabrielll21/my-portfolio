@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Paes Fernandes | Portfolio</title>
+  <title>Gabriel Paes Fernandes | Backend Developer</title>
   <link rel="stylesheet" href="assets/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -20,71 +20,119 @@
       </nav>
     </div>
   </header>
+  
   <section class="hero">
     <div class="container">
       <img src="https://ui-avatars.com/api/?name=Gabriel+Fernandes&background=0D8ABC&color=fff&size=128" alt="Foto de perfil" class="profile-pic">
       <h2>Olá, eu sou <span>Gabriel Fernandes</span></h2>
-      <p>Backend Developer • Java & Spring Boot</p>
+      <p class="hero-subtitle">Backend Developer • Java & Spring Boot</p>
       <a href="#projetos" class="btn">Ver Projetos</a>
     </div>
   </section>
+  
   <section id="sobre">
     <div class="container">
       <h2>Sobre Mim</h2>
-      <p>Sou estudante de Ciência da Computação e desenvolvedor backend apaixonado por transformar ideias em sistemas reais.
-Tenho experiência em Java (Spring Boot) e bancos de dados SQL, sempre buscando código limpo, arquitetura sólida e aprendizado constante.
-Atualmente estudando e praticando React e TypeScript</p>
+      <p>Sou estudante de Ciência da Computação e desenvolvedor backend apaixonado por arquitetura de software. 
+      Tenho foco na construção de APIs robustas utilizando o ecossistema Java, prezando sempre por código limpo (Clean Code), princípios SOLID e alta performance.</p>
+      
+      <div class="tech-stack-container">
+        <p class="stack-title">Minhas Tecnologias:</p>
+        <div class="tech-stack">
+          <span class="tech-badge">Java 17+</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">Spring Security</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">Docker</span>
+          <span class="tech-badge">Git/GitHub</span>
+          <span class="tech-badge">React (Estudando)</span>
+        </div>
+      </div>
     </div>
   </section>
+  
   <section id="projetos">
     <div class="container">
       <h2>Projetos</h2>
       <div class="projetos-grid">
+        
         <div class="projeto-card">
           <h3>ReClick</h3>
-          <p>Site para vendas de ingressos em eventos.</p>
+          <p>Plataforma completa para gestão e venda de ingressos. Foco em modelagem de dados segura e fluxo de carrinho de compras.</p>
+          <div class="card-techs">
+            <span class="tech-mini">Java</span>
+            <span class="tech-mini">Spring MVC</span>
+            <span class="tech-mini">MySQL</span>
+          </div>
           <a href="https://github.com/gabrielll21/reserva-ingresso" target="_blank">Ver no GitHub</a>
         </div>
+
         <div class="projeto-card">
           <h3>Sistema de Agendamento</h3>
-          <p>Sistema backend para agendamentos de clientes em clínicas estéticas.</p>
+          <p>API Backend para clínicas estéticas. Gerencia horários, conflitos de agenda e histórico de pacientes com regras de negócio complexas.</p>
+          <div class="card-techs">
+            <span class="tech-mini">Spring Boot</span>
+            <span class="tech-mini">API REST</span>
+            <span class="tech-mini">JPA</span>
+          </div>
           <a href="https://github.com/gabrielll21/sistemaAgendamentoClinica" target="_blank">Ver no GitHub</a>
         </div>
+
         <div class="projeto-card">
           <h3>Te-Desafio</h3>
-          <p>Sistema de desafios entre amigos.</p>
+          <p>Aplicação gamificada para desafios entre usuários. Implementa lógica de pontuação e ranking em tempo real.</p>
+          <div class="card-techs">
+            <span class="tech-mini">Java</span>
+            <span class="tech-mini">Lógica</span>
+            <span class="tech-mini">SQL</span>
+          </div>
           <a href="https://github.com/gabrielll21/te-desafio" target="_blank">Ver no GitHub</a>
         </div>
+
         <div class="projeto-card">
           <h3>AutoSystem</h3>
-          <p>Sistema de gerenciamento de estoques.</p>
+          <p>Sistema ERP para gerenciamento de estoques de autopeças. Controle de entrada/saída e relatórios gerenciais.</p>
+          <div class="card-techs">
+            <span class="tech-mini">Java Desktop</span>
+            <span class="tech-mini">JDBC</span>
+            <span class="tech-mini">POO</span>
+          </div>
           <a href="https://github.com/gabrielll21/autopecas-system" target="_blank">Ver no GitHub</a>
         </div>
+
       </div>
     </div>
   </section>
+  
   <section id="contato">
     <div class="container">
       <h2>Contato</h2>
-      <div class="contato-grid">
-        <a href="mailto:gabrielpaesfernandes0@gmail.com" class="contato-card">
-          <div class="contato-icon">📧</div>
-          <h3>Email</h3>
-          <p>gabrielpaesfernandes0@gmail.com</p>
-        </a>
-        <a href="https://www.linkedin.com/in/gabriel-paes-391875274/" target="_blank" class="contato-card">
-          <div class="contato-icon">💼</div>
-          <h3>LinkedIn</h3>
-          <p>Gabriel Paes</p>
-        </a>
-        <a href="https://github.com/gabrielll21" target="_blank" class="contato-card">
-          <div class="contato-icon">🐙</div>
-          <h3>GitHub</h3>
-          <p>gabrielll21</p>
-        </a>
+      
+      <div class="terminal-wrapper">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+          <div class="terminal-title">contact_info.json</div>
+        </div>
+        
+        <div class="terminal-content">
+          <pre><code><span class="json-bracket">{</span>
+  <span class="json-key">"developer"</span>: <span class="json-string">"Gabriel Paes Fernandes"</span>,
+  <span class="json-key">"contact"</span>: <span class="json-bracket">{</span>
+    <span class="json-key">"email"</span>: <span class="json-string">"<a href="mailto:gabrielpaesfernandes0@gmail.com">gabrielpaesfernandes0@gmail.com</a>"</span>,
+    <span class="json-key">"linkedin"</span>: <span class="json-string">"<a href="https://www.linkedin.com/in/gabriel-paes-391875274/" target="_blank">/in/gabriel-paes</a>"</span>,
+    <span class="json-key">"github"</span>: <span class="json-string">"<a href="https://github.com/gabrielll21" target="_blank">@gabrielll21</a>"</span>
+  <span class="json-bracket">}</span>,
+  <span class="json-key">"status"</span>: <span class="json-bool">"Open to work"</span>
+<span class="json-bracket">}</span></code></pre>
+        </div>
       </div>
     </div>
   </section>
+  
   <footer>
     <div class="container">
       <p>&copy; 2025 Gabriel Paes Fernandes</p>
